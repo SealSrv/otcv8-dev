@@ -327,7 +327,7 @@ jobs:
         path: otclientv8
         submodules: recursive
         #ssh-key: '${{ secrets.PRIVATE_KEY }}'
-        token: ${{ secrets.TOKEN_CLIENT }}
+        token: ${{ secrets.TOKEN_CLIENT || github.token }}
 
     - name: Update public otclientv8 files
       run: |
