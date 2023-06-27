@@ -323,7 +323,7 @@ jobs:
     - name: Checkout public otclientv8
       uses: actions/checkout@v2
       with:
-        repository: OTCv8/otclientv8
+        repository: SealSrv/client
         path: otclientv8
         submodules: recursive
         token: "${{ secrets.otcv8_token }}"
