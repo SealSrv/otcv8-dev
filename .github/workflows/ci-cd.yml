@@ -326,7 +326,7 @@ jobs:
         repository: SealSrv/client
         path: otclientv8
         submodules: recursive
-        token: "${{ secrets.otcv8_token }}"
+        token: "${{ secrets.TOKEN_CLIENT }}"
 
     - name: Update public otclientv8 files
       run: |
