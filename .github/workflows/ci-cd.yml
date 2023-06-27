@@ -323,11 +323,11 @@ jobs:
     - name: Checkout public otclientv8
       uses: actions/checkout@v2
       with:
-        repository: SealSrv/client
+        repository: client
         path: otclientv8
         submodules: recursive
         #ssh-key: '${{ secrets.PRIVATE_KEY }}'
-        token: ${{ secrets.TOKEN_CLIENT || github.token }}
+        #token: ${{ secrets.TOKEN_CLIENT || github.token }}
 
     - name: Update public otclientv8 files
       run: |
