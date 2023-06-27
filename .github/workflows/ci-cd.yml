@@ -326,8 +326,8 @@ jobs:
         repository: SealSrv/client
         path: otclientv8
         submodules: recursive
-        ssh-key: '${{ secrets.PRIVATE_KEY }}'
-        #token: "${{ secrets.TOKEN_CLIENT }}"
+        #ssh-key: '${{ secrets.PRIVATE_KEY }}'
+        token: "${{ secrets.TOKEN_CLIENT }}"
 
     - name: Update public otclientv8 files
       run: |
